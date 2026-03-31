@@ -18,11 +18,13 @@ jobs:
       with:
         node-version: "18"
 
+    #  Use npm ci (important)
     - name: Install Dependencies
-      run: npm install
+      run: npm ci
 
+    # Run ESLint safely using npx
     - name: Run Lint
-      run: npm run lint
+      run: npx eslint .
 
     - name: Run Tests
       run: npm test
