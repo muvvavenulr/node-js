@@ -1,0 +1,18 @@
+{
+  "name": "node-docker-app",
+  "version": "1.0.0",
+  "description": "DevOps CI/CD Demo",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "lint": "eslint .",
+    "test": "jest"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.50.0",
+    "jest": "^29.0.0"
+  }
+}
